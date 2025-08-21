@@ -1,0 +1,27 @@
+% Arquivo principal - TCC.tex
+\documentclass[12pt, a4paper,twoside]{article}
+
+% ========== PRÉ-AMBIENTE ==========
+% Carrega todas as configurações
+ \input{preambulo/pacotes}
+ \input{preambulo/config}
+ \input{preambulo/estilo}
+
+% ========== DOCUMENTO ==========
+\begin{document}
+
+% Elementos pré-textuais
+\input{aulas/capa}
+
+\newpage
+\pagenumbering{gobble}
+
+\renewcommand{\contentsname}{\hfill \MakeUppercase{Sumário}\hfill}
+\tableofcontents
+
+\newpage
+
+% % Capítulos principais
+\input{aulas/aula_1}
+
+\end{document}

@@ -1,0 +1,36 @@
+%======================================
+% CONFIGURAÇÕES DO DOCUMENTO
+%======================================
+
+%====== PACOTE PARA CAIXAS DE TEOREMAS ======%
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{theorems}
+
+%====== ESTILO PADRÃO PARA TEOREMAS ======%
+\tcbset{
+  mytheostyle/.style={
+    enhanced,
+    breakable,
+    colback=white,       % fundo branco
+    colframe=black,      % borda preta
+    fonttitle=\bfseries, % título em negrito
+    coltitle=white,      % cor do texto do título
+    colbacktitle=black,  % fundo da barra de título preta
+    sharp corners        % cantos retos
+  }
+}
+
+%====== AMBIENTES DE TEOREMAS ESTILIZADOS ======%
+\newtcbtheorem[number within=section]{teorema}{Teorema}{mytheostyle}{th}
+\newtcbtheorem[number within=section]{corolario}{Corolário}{mytheostyle}{cor}
+\newtcbtheorem[number within=section]{lema}{Lema}{mytheostyle}{lem}
+\newtcbtheorem[number within=section]{proposicao}{Proposição}{mytheostyle}{prop}
+\newtcbtheorem[number within=section]{definicao}{Definição}{mytheostyle}{def}
+\newtcbtheorem[number within=section]{exemplo}{Exemplo}{mytheostyle}{ex}
+\newtcbtheorem[number within=section]{observacao}{Observação}{mytheostyle}{obs}
+
+% Observação:
+% - Todos numeram por seção (ex.: Teorema 2.1)
+% - “Exemplo” e “Observação” são úteis em notas de aula
+% - Suporte a título opcional: 
+%   \begin{definicao}[Título opcional] ... \end{definicao}

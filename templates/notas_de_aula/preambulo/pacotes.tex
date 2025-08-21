@@ -1,0 +1,64 @@
+%======================================
+% PACOTES PRINCIPAIS
+%======================================
+\usepackage{graphicx}    % Inclusão de figuras
+\usepackage[top=3cm,bottom=2cm,inner=3cm,outer=2cm,twoside]{geometry} % Margens
+\usepackage{ragged2e}    % Melhor controle de alinhamento (ex.: \justifying)
+\usepackage{fontspec}    % Necessário para XeLaTeX/LuaLaTeX (uso de fontes do sistema)
+\usepackage{setspace}    % Espaçamento entre linhas (ex.: \onehalfspacing)
+\usepackage{comment}     % Permite comentar blocos grandes de texto
+\usepackage{fancyhdr}    % Personalização de cabeçalhos e rodapés
+%\usepackage{lipsum}      % Geração de texto fictício (apenas para testes)
+\usepackage[bottom]{footmisc} % Faz notas de rodapé ficarem sempre no fim da página
+\usepackage{pdfpages}    % Inclusão de PDFs inteiros/páginas específicas
+%\usepackage{csquotes}    % Citações melhor formatadas
+\usepackage{booktabs}    % Tabelas mais elegantes
+\usepackage{changepage}  % Ajustar margens localmente (útil para figuras largas)
+\usepackage{bookmark}
+\usepackage[most]{tcolorbox} % Para caixas estilizadas
+\usepackage{enumitem} % Para enumerates customizados
+
+
+%======================================
+% PACOTES MATEMÁTICOS E GERAIS
+%======================================
+\usepackage{hyperref}    % Links clicáveis no PDF (índice, refs, URLs)
+\usepackage{amssymb}     % Símbolos matemáticos
+\usepackage{amsmath}     % Ambientes matemáticos (equation, align, etc.)
+\usepackage{amsthm}      % Ambientes de teorema, lema, etc.
+\usepackage{array}       % Colunas mais flexíveis em tabelas
+\usepackage{unicode-math}% Uso de fontes matemáticas modernas (XeLaTeX/LuaLaTeX)
+\usepackage{nameref}     % Referências pelo nome (ex.: \nameref{sec:intro})
+\usepackage{float}       % Melhor controle de posicionamento de figuras/tabelas
+\usepackage[table]{xcolor} % Cores em tabelas e no texto
+
+%======================================
+% OUTROS PACOTES
+%======================================
+\usepackage{soul}        % Destaque de texto (ex.: \hl{})
+\usepackage{xcolor}      % Definição de cores
+%\usepackage{tikz}        % Diagramas, esquemas e figuras vetoriais
+%\usetikzlibrary{matrix,positioning,arrows.meta,fit,backgrounds} % Extensões do TikZ
+
+% Carregar depois de hyperref e babel
+\usepackage{newfloat}    % Criação de novos ambientes flutuantes
+\usepackage{caption}     % Customização de legendas
+\usepackage{tocloft}     % Customização do sumário/listas
+
+%======================================
+% NOTA SOBRE USO
+%======================================
+% Pacotes recomendados para "Notas de Aula":
+% - graphicx, geometry, ragged2e, fontspec, setspace, fancyhdr
+% - amsmath, amssymb, amsthm, xcolor, float, hyperref
+% - tikz (se for usar esquemas)
+%
+% Pacotes que provavelmente NÃO serão usados em notas:
+% - biblatex, etoolbox, csquotes (referências ABNT)
+% - pdfpages (inserir PDFs inteiros)
+% - lipsum (texto fictício, só teste)
+% - tocloft (mais útil em TCCs/dissertações)
+%
+% Sugestão: manter o arquivo igual ao do TCC e só comentar
+% o que não for necessário no momento.
+
